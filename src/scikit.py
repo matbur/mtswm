@@ -13,6 +13,7 @@ def error(x):
     t = np.array([10., 30., 120.], dtype=np.float128)
     c = np.array([.0019, .0052, .014], dtype=np.float128)
     f = foo(t, k, v)
+    print(f)
     err = np.sum((f - c) ** 2)
     return err
 
@@ -30,4 +31,5 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    # main()
+    print(error([.01, 5000]))

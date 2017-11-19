@@ -5,7 +5,6 @@ import numpy as np
 
 def foo(t, k, v):
     return (1 - np.exp(-k * t)) / (k * v)
-    # return t * k + v
 
 
 def main():
@@ -36,7 +35,7 @@ def main():
 
 if __name__ == '__main__':
     # main()
-    k, v = (0.010020095109916951973, 4986.5215040898547159)
+    k, v = (0.01, 5000)
     t = np.array([10., 30., 120.], dtype=np.float128)
     for i in t:
         f = foo(i, k, v)
